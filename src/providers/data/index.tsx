@@ -21,7 +21,7 @@ export const client = new GraphQLClient(API_URL,{
 
 export const wsClient = typeof window !== "undefined"
 ? createClient({
-  url: WS_URL:,
+  url: WS_URL,
   connectionParams: () => {
     const accessToken = localStorage.getItem("access_token");
 
